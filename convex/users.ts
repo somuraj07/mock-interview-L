@@ -22,8 +22,6 @@ export const syncUser = mutation({
             role: "candidate",
             });
         }
-
-       
         }
     );
 
@@ -51,3 +49,4 @@ export const syncUser = mutation({
         }
 
     });
+   
