@@ -1,71 +1,96 @@
-# ​ MockInterviewer – AI-Powered Mock Interview Platform
+<h1 align="center">🤖 MockInterviewer</h1>
+<p align="center">
+  <b>AI-Powered Mock Interview Platform – Create & Attend via Link (Zoom-Style)</b><br/>
+  Practice interviews, get AI-generated questions, and join sessions instantly via shareable links.
+</p>
 
-**MockInterviewer** is a modern, full-stack web application that enables users to **create and attend AI-driven mock interviews via shareable video links**, resembling a seamless Zoom-like experience. Ideal for practice, assessments, and interview prep with AI-based question generation and session recording.
-
----
-
-##  Why MockInterviewer?
-
-- **AI-Driven Interview Experience**: Simulate real interviews with intelligently generated questions.
-- **Invite via Link**: Share session links just like Zoom for easy access.
-- **Role-based Flow**: Interviewers and candidates each get a custom interface.
-- **Session Management**: Start, pause, and end mock interviews with time tracking.
-- **Review & Feedback**: Optionally record sessions or transcripts for review.
-
----
-
-##  Tech Stack
-
-| Layer        | Technologies |
-|--------------|--------------|
-| **Frontend** | Next.js, React, Tailwind CSS |
-| **Backend**  | Node.js, Next.js API Routes / Express |
-| **AI Engine**| OpenAI GPT-4 or custom prompt-based LLM |
-| **Database** | PostgreSQL (or MongoDB) |
-| **ORM**      | Prisma (if using SQL database) |
-| **Auth**     | Auth.js (NextAuth.js) |
-| **Video**    | WebRTC or Zoom SDK for real-time video |
-| **Deployment** | Vercel or similar |
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Next.js-14-black?logo=next.js" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?logo=tailwind-css&logoColor=white" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/PostgreSQL-14-336791?logo=postgresql&logoColor=white" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Prisma-ORM-2D3748?logo=prisma" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/OpenAI-GPT--4-412991?logo=openai&logoColor=white" /></a>
+</p>
 
 ---
 
-##  Features Overview
+## 📌 Overview
+**MockInterviewer** is a modern AI-powered mock interview platform that lets you:
+- 📝 Create interview rooms  
+- 🔗 Share a join link (just like Zoom)  
+- 🎤 Conduct live video interviews  
+- 💡 Get **real-time AI-generated questions**  
+- 📄 Record & review answers for improvement  
 
-- **User Flow**
-  - Register or sign in
-  - Create mock-interview sessions
-  - Copy and share session link
-  - Join via link—no account needed for guest participants
-
-- **AI Interaction**
-  - AI generates tailored interview questions (behavioral/technical)
-  - Optional hints & trending questions based on domain
-
-- **Session Controls**
-  - Real-time video/audio via WebRTC or Zoom integration
-  - Timer and session logs for accountability
-
-- **Review Mechanism**
-  - Download session recording or transcript
-  - Annotate answers and self-reflect
+It’s designed for **students, job seekers, and recruiters** who want a fast, intelligent, and interactive interview experience.
 
 ---
 
-##  Installation & Setup
+## 🚀 Live Demo
+🔗 **[View Project on Vercel](https://your-deployed-link.vercel.app)** *(replace with actual)*
+
+---
+
+## 🛠️ Tech Stack
+
+| Category        | Technologies |
+|-----------------|--------------|
+| **Frontend**    | Next.js, React, Tailwind CSS |
+| **Backend**     | Node.js, Next.js API Routes |
+| **Database**    | PostgreSQL |
+| **ORM**         | Prisma |
+| **Auth**        | Auth.js (NextAuth.js) |
+| **AI Engine**   | OpenAI GPT-4 (custom prompts) |
+| **Video**       | WebRTC / Zoom SDK |
+| **Deployment**  | Vercel |
+
+---
+
+## ✨ Key Features
+
+### 🎯 Interview Creation & Join via Link
+- Host can create a session and share an **invite link** for participants  
+- No sign-up needed for guests
+
+### 🤖 AI-Powered Q&A
+- AI generates questions based on:
+  - Role / Job type
+  - Technical or behavioral categories
+  - Difficulty level
+
+### 🎥 Live Video Interface
+- Real-time video/audio streaming  
+- Option to record sessions
+
+### 📊 Feedback & Review
+- Download session transcript  
+- AI highlights weak areas & improvement tips  
+
+---
+
+## 📷 Screenshots
+> *(Add actual screenshots here for extra impact)*  
+![MockInterviewer Demo](https://via.placeholder.com/1000x500.png?text=Add+Your+Screenshot+Here)
+
+---
+
+## ⚡ Quick Start
 
 ```bash
-# Clone the repository
+# Clone repo
 git clone https://github.com/somuraj07/mock-interview-L.git
 cd mock-interview-L
 
 # Install dependencies
 npm install
 
-# Set environment variables via .env
-# e.g. DATABASE_URL, OPENAI_API_KEY, NEXTAUTH_SECRET, ZOOM_SDK_KEY/SECRET
+# Set environment variables in .env
+DATABASE_URL="your_postgresql_url"
+NEXTAUTH_SECRET="your_secret"
+OPENAI_API_KEY="your_openai_api_key"
 
-# Run database migrations (if using Prisma)
+# Run Prisma migrations
 npx prisma migrate dev
 
-# Start the development server
+# Start dev server
 npm run dev
