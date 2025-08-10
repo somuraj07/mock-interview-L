@@ -68,11 +68,6 @@ It’s designed for **students, job seekers, and recruiters** who want a fast, i
 
 ---
 
-## 📷 Screenshots
-> *(Add actual screenshots here for extra impact)*  
-![MockInterviewer Demo](https://via.placeholder.com/1000x500.png?text=Add+Your+Screenshot+Here)
-
----
 
 ## ⚡ Quick Start
 
